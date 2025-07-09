@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paint Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <button class="tool active" data-tool="brush" title="Pincel">🖌</button>
+      <button class="tool" data-tool="line" title="Línea">📏</button>
+      <button class="tool" data-tool="rectangle" title="Rectángulo">▭</button>
+      <button class="tool" data-tool="circle" title="Círculo">⚪</button>
+      <button class="tool" data-tool="eraser" title="Borrador">🧽</button>
+      <div class="colors">
+        <button class="color" style="background: black" data-color="#000"></button>
+        <button class="color" style="background: red" data-color="red"></button>
+        <button class="color" style="background: blue" data-color="blue"></button>
+        <button class="color" style="background: green" data-color="green"></button>
+        <button class="color" style="background: yellow" data-color="yellow"></button>
+        <button class="color" style="background: orange" data-color="orange"></button>
+        <button class="color" style="background: purple" data-color="purple"></button>
+        <button class="color" style="background: brown" data-color="brown"></button>
+      </div>
+      <button id="clear">🗑 Limpiar</button>
+      <button id="save">💾 Guardar</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
