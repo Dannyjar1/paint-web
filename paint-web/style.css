@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.toolbar {
+  width: 100px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.tool, .color, #clear, #save {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tool:hover, .color:hover, #clear:hover, #save:hover {
+  transform: scale(1.1);
+}
+
+.tool.active {
+  background: #ddd;
+  border: 2px solid #333;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#canvas {
+  flex-grow: 1;
+  cursor: crosshair;
+  background: #fff;
+}
